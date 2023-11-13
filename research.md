@@ -5,7 +5,8 @@ permalink: /research/
 author_profile: true
 comments: true
 ---
+## Works in progress
 
-# Research Assistant
+## Research assistant
 
-# Other publications
+## Other publications
