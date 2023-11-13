@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Cecilia Cavero Sanchez"
   avatar           : "/assets/images/prof_pic.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : # "I am an **amazing** person."
   location         : "State College, PA"
   email            :
   links:
