@@ -6,4 +6,4 @@ author_profile: true
 comments: true
 ---
 
-This is my blog page.
+Welcome to my webpage! My name is Cecilia and I am a first-year doctoral student. 
