@@ -20,7 +20,7 @@ title                    : "Cecilia Cavero Sanchez"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Cecilia Cavero Sanchez"
-description              : "An amazing website."
+description              : # "An amazing website."
 url                      : "https://ccaveros.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ccaveros/ccaveros"
