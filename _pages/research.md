@@ -6,4 +6,4 @@ author_profile: true
 comments: true
 ---
 
-These are my reserach projects
+These are my research projects
