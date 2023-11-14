@@ -8,6 +8,15 @@ comments: true
 
 Welcome to my webpage! My name is Cecilia and I am a first-year doctoral student in Political Science. My field of research is International Relations and I plan to complete the Dual degree with Social Data Analytics. 
 
+My research interests are:
+- Peacebuilding
+- Political Violence
+- Human Security
+- Democratization
+
+
+# Education
+
  🎓 Ph.D. in Political Science, expected 2028 
  *The Pennsylvania State University* 
  
