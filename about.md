@@ -20,7 +20,7 @@ My research interests include:
  🎓 Ph.D. in Political Science, expected 2028, //
 
  
- *The Pennsylvania State University* 
+    *The Pennsylvania State University* 
  
  🎓 Masters of Research in International Relations, 2023
 *University of Essex*
