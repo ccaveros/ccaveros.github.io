@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Cecilia Cavero Sanchez"
+title                    : "Cecilia Cavero Sánchez"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Cecilia Cavero Sanchez"
+name                     : "Cecilia Cavero Sánchez"
 description              : # "An amazing website."
 url                      : "https://ccaveros.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Cecilia Cavero Sanchez"
+  name             : "Cecilia Cavero Sánchez"
   avatar           : "/assets/images/prof_pic.jpg"
   bio              : # "I am an **amazing** person."
-  location         : "The Pennsylvania State University, State College, PA"
-  email            :
+  location         : "State College, PA"
+  email            : "ccaveros@psu.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
