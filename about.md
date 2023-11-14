@@ -18,6 +18,8 @@ My research interests include:
 # Education
 
  🎓 Ph.D. in Political Science, expected 2028, //
+
+ 
  *The Pennsylvania State University* 
  
  🎓 Masters of Research in International Relations, 2023
