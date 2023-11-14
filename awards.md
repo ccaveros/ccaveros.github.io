@@ -6,12 +6,18 @@ author_profile: true
 comments: true
 ---
 
+## The Pennsylvania State University
+
 - Bruce R. Miller and Dean D. Lavigne Distinguished Graduate 2023 Fellowship in the College of the Liberal Arts, 2023
 
 - Jesse M. MacKnight Memorial Graduate Scholarship, 2023
-  
+
+## The University of Essex
+
 - La Caixa Postgraduate Studies Abroad Fellowship, 2021
-  
+
+## Universidad Carlos II Madrid
+
 - Best International Relations Undergraduate Thesis, 2021 
   
 - Scholarship for the Second RECSM Winter Methods School, 2021
