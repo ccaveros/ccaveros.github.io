@@ -20,16 +20,19 @@ My research interests include:
  🎓 Ph.D. in Political Science, expected 2028, //
 
  
-    *The Pennsylvania State University* 
+   *The Pennsylvania State University* 
  
  🎓 Masters of Research in International Relations, 2023
+ 
 
-    *University of Essex*
+   *University of Essex*
  
  🎓 B.A. in Political Science, 2021
+
  
-    *Universidad Carlos III of Madrid* 
+   *Universidad Carlos III of Madrid* 
  
 🎓 B.A. in International Studies, 2021
 
-    *Universidad Carlos III of Madrid*
+
+   *Universidad Carlos III of Madrid*
