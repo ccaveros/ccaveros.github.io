@@ -15,7 +15,7 @@ My research interests include:
 - Democratization
 
 
-# Education
+## Education
 
  🎓 Ph.D. in Political Science, expected 2028, 
 
