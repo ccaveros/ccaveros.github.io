@@ -110,9 +110,9 @@ author:
   location         : "State College, PA"
   email            : "ccaveros@psu.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ccaveros@psu.edu"
+    - label: #"Email"
+      icon: #"fas fa-fw fa-envelope-square"
+      url: #"mailto:ccaveros@psu.edu"
     - label: "Penn State"
       icon: "fas fa-fw fa-link"
       url: "https://polisci.la.psu.edu/people/cecilia-cavero/"
