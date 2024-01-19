@@ -10,10 +10,11 @@ Welcome to my webpage! My name is Cecilia and I am a first-year doctoral student
 
 My research interests include:
 - Peacebuilding
-- Political Violence
-- Human Security
-- Democratization
-
+- Intrastate war
+- Civil society
+- Terrorism
+- Causal Inference
+- Network Analysis
 
 ## Education
 
