@@ -8,9 +8,9 @@ comments: true
 
 ## The Pennsylvania State University
 
-- Department Research Funding, 2024
-
 - Summer Graduate Research Award, 2024
+
+- Department Research Funding, 2024
   
 - Bruce R. Miller and Dean D. Lavigne Distinguished Graduate 2023 Fellowship in the College of the Liberal Arts, 2023
 
