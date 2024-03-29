@@ -20,7 +20,7 @@ comments: true
 
 - La Caixa Postgraduate Studies Abroad Fellowship, 2021
 
-## Universidad Carlos III Madrid
+## Universidad Carlos III de Madrid
 
 - Best International Relations Undergraduate Thesis, 2021 
   
