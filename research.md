@@ -6,9 +6,10 @@ author_profile: true
 comments: true
 ---
 ## Research assistant
-1. Women’s Activities in Armed Rebellion project (Meredith Loken, University of Amsterdam)
-2. Terrorist group proscription (Brian Phillips, University of Essex)
-3. Transnational humanitarian medicine in spaces of confinement (Jon Arrizabalaga, Spanish National Research Council)
+1. Rebel Courts Dataset (Cyanne E. Loyle, Pennsylvania State University)
+2. Women’s Activities in Armed Rebellion project (Meredith Loken, University of Amsterdam)
+3. Terrorist group proscription (Brian Phillips, University of Essex)
+4. Transnational humanitarian medicine in spaces of confinement (Jon Arrizabalaga, Spanish National Research Council)
 
 ## Other publications
 1. Discovery of speech crimes in Ukraine from open sources, Digital Veritication Unit (under the supervision of Dr. Matthew Gillet), 2023.
