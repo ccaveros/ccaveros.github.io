@@ -8,6 +8,8 @@ comments: true
 
 ## The Pennsylvania State University
 
+- Bruce R. Miller and Dean D. Lavigne Distinguished Graduate 2023 Fellowship in the College of the Liberal Arts, Spring 2025
+
 - Summer Graduate Research Award, 2024
 
 - Department Research Funding, 2024
