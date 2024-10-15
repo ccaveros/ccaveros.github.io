@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter
 ---
 
 @charset "utf-8";
@@ -37,4 +37,9 @@ html {
 
 .sidebar p {
   font-size: 0.9em; // Adjust sidebar text size
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  object-fit: cover;
 }
