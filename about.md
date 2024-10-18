@@ -6,7 +6,7 @@ author_profile: true
 comments: true
 ---
 
-Welcome to my webpage! My name is Cecilia and I am a doctoral student in Political Science at Penn State. My fields of research are International Relations and Political Methodology, and I plan to complete the dual degree with Social Data Analytics. 
+Welcome to my webpage! My name is Cecilia and I am a Dual Title Ph.D. student in Political Science and in Social Data Analytics at Penn State.
 
 My research interests include:
 - Peacebuilding
