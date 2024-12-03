@@ -6,7 +6,7 @@ author_profile: true
 comments: true
 ---
 ## Research assistant
-1. Networks of Influence (RIPIL Lab, American University, Susanna Campbell \& Jessica M. Braithwaite)
+1. Networks of Influence (RIPIL Lab, American University, Susanna Campbell & Jessica M. Braithwaite)
 2. Rebel Courts Dataset (Cyanne E. Loyle, Pennsylvania State University)
 3. Women’s Activities in Armed Rebellion project (Meredith Loken, University of Amsterdam)
 4. Terrorist group proscription (Brian Phillips, University of Essex)
