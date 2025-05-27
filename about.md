@@ -10,15 +10,17 @@ Welcome to my webpage! My name is Cecilia and I am a Dual Title Ph.D. student in
 
 My research interests include:
 - Peacebuilding
-- Intrastate war
-- Civil society
+- Civil Society
+- Dispute Resolution
 - Multi-Method Research
 
 ## Education
 
- 🎓 Ph.D. in Political Science, expected 2028, *The Pennsylvania State University* 
+ 🎓 Dual Ph.D. Title in Political Science and Social Data Analytics, expected 2028, *The Pennsylvania State University* 
  
- 🎓 Masters of Research in International Relations, 2023, *University of Essex*
+ 🎓 M.A. in Political Science, 2025, *The Pennsylvania State University* 
+ 
+ 🎓 M. Res. in International Relations, 2023, *University of Essex*
  
  🎓 B.A. in Political Science, 2021, *Universidad Carlos III of Madrid* 
  
