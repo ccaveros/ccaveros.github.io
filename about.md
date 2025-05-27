@@ -12,8 +12,7 @@ My research interests include:
 - Peacebuilding
 - Intrastate war
 - Civil society
-- Causal Inference
-- Network Analysis
+- Multi-Method Research
 
 ## Education
 
