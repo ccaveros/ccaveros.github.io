@@ -6,11 +6,12 @@ author_profile: true
 comments: true
 ---
 ## Research assistant
-1. Networks of Influence (RIPIL Lab, American University, Susanna Campbell & Jessica M. Braithwaite)
-2. Rebel Courts Dataset (Cyanne E. Loyle, Pennsylvania State University)
-3. Women’s Activities in Armed Rebellion project (Meredith Loken, University of Amsterdam)
-4. Terrorist group proscription (Brian Phillips, University of Essex)
-5. Transnational humanitarian medicine in spaces of confinement (Jon Arrizabalaga, Spanish National Research Council)
+1. Domestic Lawfare (Cyanne E. Loyle, Pennsylvania State University)
+2. Networks of Influence (RIPIL Lab, American University, Susanna Campbell & Jessica M. Braithwaite)
+3. Rebel Courts Dataset (Cyanne E. Loyle, Pennsylvania State University)
+4. Women’s Activities in Armed Rebellion project (Meredith Loken, University of Amsterdam)
+5. Terrorist group proscription (Brian Phillips, University of Essex)
+6. Transnational humanitarian medicine in spaces of confinement (Jon Arrizabalaga, Spanish National Research Council)
 
 ## Other publications
 1. Discovery of speech crimes in Ukraine from open sources, Digital Veritication Unit (under the supervision of Dr. Matthew Gillet), 2023.
