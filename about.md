@@ -6,7 +6,7 @@ author_profile: true
 comments: true
 ---
 
-Welcome to my webpage! My name is Cecilia and I am a Dual Title Ph.D. student in Political Science and in Social Data Analytics at Penn State. I am also a Research Fellow at the [Research on International Policy Implementatino (RIPIL) Lab](https://www.ripilab.com/about-1).
+Welcome to my webpage! My name is Cecilia and I am a Dual Title Ph.D. student in Political Science and in Social Data Analytics at Penn State. I am also a Research Fellow at the [Research on International Policy Implementation (RIPIL) Lab](https://www.ripilab.com/about-1).
 
 
 My research interests include:
