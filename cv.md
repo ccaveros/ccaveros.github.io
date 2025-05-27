@@ -6,4 +6,4 @@ author_profile: true
 comments: true
 ---
 
-Here is the latest copy of my [CV](https://drive.google.com/file/d/1U5JkAIfcISBtFFA_htfnj5ZTjVcTh-7M/view?usp=sharing).
+Here is the latest copy of my [CV](https://drive.google.com/file/d/1BTq6BZgzXH1RGjnojGf0Pi2Q-5PA-bdR/view?usp=sharing).
