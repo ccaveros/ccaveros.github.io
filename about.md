@@ -17,9 +17,9 @@ My research interests include:
 
 ## Education
 
- 🎓 Dual Ph.D. Title in Political Science and Social Data Analytics, expected 2028, *The Pennsylvania State University* 
+ 🎓 Dual Ph.D. Title in Political Science and Social Data Analytics, expected 2028, *Pennsylvania State University* 
  
- 🎓 M.A. in Political Science, 2025, *The Pennsylvania State University* 
+ 🎓 M.A. in Political Science, 2025, *Pennsylvania State University* 
  
  🎓 M. Res. in International Relations, 2023, *University of Essex*
  
