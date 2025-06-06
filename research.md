@@ -5,6 +5,9 @@ permalink: /research/
 author_profile: true
 comments: true
 ---
+## Under Review
+1. The Legacies of Civil Wars: Effects of Armed Conflict on Electoral Processes Over Time (with [Giancarlo Visconti](https://www.giancarlovisconti.com/))
+
 ## Research assistant
 1. Domestic Lawfare (Cyanne E. Loyle, Pennsylvania State University)
 2. Networks of Influence (RIPIL Lab, American University, Susanna Campbell & Jessica M. Braithwaite)
