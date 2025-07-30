@@ -10,7 +10,7 @@ comments: true
 
 - Program in Empirical International Relations Fellowship, Spring 2026
 
-- Bruce R. Miller and Dean D. Lavigne Distinguished Graduate 2023 Fellowship in the College of the Liberal Arts, Spring 2025
+- Bruce R. Miller and Dean D. Lavigne Distinguished Graduate Fellowship, Spring 2025
 
 - Summer Graduate Research Award, 2024
 
