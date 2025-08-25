@@ -10,7 +10,7 @@ comments: true
 
 - Program in Empirical International Relations Fellowship, Spring 2026
 
-- ICDS Rising Junior Researcher, Fall 2025
+- Institute for Computational and Data Sciences Rising Junior Researcher, Fall 2025
 
 - Bruce R. Miller and Dean D. Lavigne Distinguished Graduate Fellowship, Spring 2025
 
