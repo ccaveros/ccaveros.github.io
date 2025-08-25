@@ -10,6 +10,8 @@ comments: true
 
 - Program in Empirical International Relations Fellowship, Spring 2026
 
+- ICDS Rising Junior Researcher, Fall 2025
+
 - Bruce R. Miller and Dean D. Lavigne Distinguished Graduate Fellowship, Spring 2025
 
 - Summer Graduate Research Award, 2024
