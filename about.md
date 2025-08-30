@@ -11,9 +11,12 @@ Welcome to my webpage! My name is Cecilia and I am a Dual Title Ph.D. student in
 
 My research interests include:
 - Peacebuilding
+- Aid
 - Civil Society
 - Dispute Resolution
 - Multi-Method Research
+
+My research has been funded by the Institute of Computational and Data Sciences at Penn State and the La Caixa Foundation.
 
 ## Education
 
