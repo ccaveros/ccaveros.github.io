@@ -16,7 +16,7 @@ My research interests include:
 - Dispute Resolution
 - Multi-Method Research
 
-My research has been funded by the Institute of Computational and Data Sciences at Penn State and the La Caixa Foundation.
+My research has been supported by the Institute of Computational and Data Sciences at Penn State and the La Caixa Foundation.
 
 ## Education
 
