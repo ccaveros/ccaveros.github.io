@@ -7,6 +7,7 @@ comments: true
 ---
 ## Under Review
 1. The Legacies of Civil Wars: Effects of Armed Conflict on Electoral Processes Over Time (with [Giancarlo Visconti](https://www.giancarlovisconti.com/))
+2. Civil Society and the Local Dynamics of Peacebuilding
 
 ## Research assistant
 1. Domestic Lawfare (Cyanne E. Loyle, Pennsylvania State University)
