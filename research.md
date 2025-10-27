@@ -8,6 +8,7 @@ comments: true
 ## Under Review
 1. The Legacies of Civil Wars: Effects of Armed Conflict on Electoral Processes Over Time (with [Giancarlo Visconti](https://www.giancarlovisconti.com/))
 2. Civil Society and the Local Dynamics of Peacebuilding
+3. Human Rights Consolidation or Fragmentation? A Network Analysis of Resolution Sponsorship in the UN Human Rights Council (with [Jared Edgerton](https://jaredfedgerton.net/) and [Gino Pauselli](http://ginopauselli.com/))
 
 ## Research assistant
 1. Domestic Lawfare (Cyanne E. Loyle, Pennsylvania State University)
