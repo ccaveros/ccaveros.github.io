@@ -6,7 +6,7 @@ author_profile: true
 comments: true
 ---
 
-Welcome to my webpage! My name is Cecilia and I am a Dual Title Ph.D. student in Political Science and in Social Data Analytics at Penn State. I am also a Project Manager of the Networks of Influence project at the [Research on International Policy Implementation (RIPIL) Lab](https://www.ripilab.com/the-team) and I co-convene the [Junior Scholars in Quantitative Conflict Workshop](https://junior-quant-conflict-workshop.github.io/).
+Hello! My name is Cecilia and I am a Dual Title Ph.D. student in Political Science and in Social Data Analytics at Penn State. I am also a Project Manager of the Networks of Influence project at the [Research on International Policy Implementation (RIPIL) Lab](https://www.ripilab.com/the-team) and I co-convene the [Junior Scholars in Quantitative Conflict Workshop](https://junior-quant-conflict-workshop.github.io/).
 
 
 My research interests include:
