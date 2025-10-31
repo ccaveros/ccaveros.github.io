@@ -16,7 +16,7 @@ My research interests include:
 - Dispute Resolution
 - Multi-Method Research
 
-My research has been supported by the [ReCIPE Resarch Initiative]{https://recipe.cepr.org/}, the [Institute of Computational and Data Sciences](https://www.icds.psu.edu/2025-rising-researcher-funded-projects/) at Penn State, and the [La Caixa Foundation](https://becarios.fundacionlacaixa.org/cecilia-cavero-sanchez-B005417?nav=true).
+My research has been supported by the [ReCIPE Resarch Initiative](https://recipe.cepr.org/), the [Institute of Computational and Data Sciences](https://www.icds.psu.edu/2025-rising-researcher-funded-projects/) at Penn State, and the [La Caixa Foundation](https://becarios.fundacionlacaixa.org/cecilia-cavero-sanchez-B005417?nav=true).
 
 ## Education
 
