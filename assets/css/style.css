@@ -61,6 +61,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.3;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
@@ -296,12 +297,13 @@ li {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
-  transition: box-shadow var(--transition);
+  transition: box-shadow var(--transition), transform var(--transition);
   counter-increment: pub-counter;
 }
 
 .pub-item:hover {
   box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
 }
 
 .pub-header {
@@ -349,17 +351,26 @@ li {
 }
 
 .pub-details {
-  display: none;
-  padding-top: 1rem;
-  margin-top: 1rem;
-  border-top: 1px solid var(--border);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 0;
+  margin-top: 0;
   font-size: 0.9rem;
   color: var(--text-light);
   line-height: 1.7;
+  transition: max-height 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+              opacity 0.3s ease,
+              padding-top 0.4s ease,
+              margin-top 0.4s ease;
 }
 
 .pub-details.open {
-  display: block;
+  max-height: 600px;
+  opacity: 1;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .pub-venue {
@@ -401,28 +412,38 @@ li {
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
 }
 
 .edu-item:last-child {
   border-bottom: none;
 }
 
+.edu-info {
+  flex: 1;
+}
+
 .edu-degree {
   font-weight: 600;
   font-size: 0.95rem;
+  display: block;
 }
 
 .edu-school {
   color: var(--text-light);
   font-size: 0.9rem;
+  display: block;
+  margin-top: 0.1rem;
 }
 
 .edu-year {
   color: var(--burgundy);
   font-size: 0.85rem;
   font-weight: 600;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* ===== Awards ===== */
@@ -691,7 +712,8 @@ li {
 
   .edu-item {
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 0.15rem;
+    align-items: flex-start;
   }
 
   .award-item {
@@ -762,5 +784,36 @@ li {
 
   .cv-embed iframe {
     height: 350px;
+  }
+}
+
+/* ===== Focus Indicators ===== */
+*:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ===== Profile Photo Polish ===== */
+.hero-photo img {
+  box-shadow: 0 8px 24px rgba(123, 45, 59, 0.1),
+              0 2px 6px rgba(123, 45, 59, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-photo img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(123, 45, 59, 0.14),
+              0 4px 8px rgba(123, 45, 59, 0.1);
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
