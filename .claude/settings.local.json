@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.williamgnomikos.com)",
+      "Bash(powershell -Command:*)"
+    ]
+  }
+}
