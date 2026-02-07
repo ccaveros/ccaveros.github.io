@@ -219,6 +219,17 @@ li {
   line-height: 1.8;
 }
 
+.hero-bio a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+.hero-bio a:hover {
+  text-decoration-color: var(--burgundy-light);
+}
+
 .hero-links {
   display: flex;
   flex-wrap: wrap;
@@ -280,6 +291,9 @@ li {
 
 .page-header h1 {
   font-size: 2rem;
+  display: inline-block;
+  padding-bottom: 0.35rem;
+  border-bottom: 3px solid var(--burgundy);
 }
 
 .page-header p {
@@ -346,13 +360,24 @@ li {
   align-items: center;
   justify-content: center;
   color: var(--text-light);
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   transition: all var(--transition);
 }
 
 .pub-toggle:hover {
   border-color: var(--burgundy);
   color: var(--burgundy);
+}
+
+.pub-toggle svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.pub-toggle.open svg {
+  transform: rotate(180deg);
 }
 
 .pub-details {
@@ -465,12 +490,18 @@ li {
 }
 
 .award-item {
-  padding: 0.6rem 0;
+  padding: 0.6rem 0.75rem;
   border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
+  border-radius: 4px;
+  transition: background var(--transition);
+}
+
+.award-item:hover {
+  background: rgba(123, 45, 59, 0.03);
 }
 
 .award-item:last-child {
@@ -490,12 +521,21 @@ li {
 
 /* ===== Teaching ===== */
 .teaching-item {
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.teaching-item:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
 }
 
 .teaching-item:last-child {
-  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .teaching-role {
@@ -610,11 +650,13 @@ li {
 
 .footer-links a {
   color: var(--text-light);
-  transition: color var(--transition);
+  transition: color var(--transition), transform var(--transition);
+  display: inline-block;
 }
 
 .footer-links a:hover {
   color: var(--burgundy);
+  transform: translateY(-2px) scale(1.1);
 }
 
 .footer-links svg {
@@ -737,7 +779,7 @@ li {
   }
 
   .teaching-item {
-    padding: 0.85rem 0;
+    padding: 1rem 1.15rem;
   }
 
   .cv-embed iframe {

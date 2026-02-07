@@ -23,6 +23,6 @@ function togglePub(header) {
   var btn = header.querySelector('.pub-toggle');
   if (details) {
     details.classList.toggle('open');
-    btn.textContent = details.classList.contains('open') ? '−' : '+';
+    btn.classList.toggle('open');
   }
 }
