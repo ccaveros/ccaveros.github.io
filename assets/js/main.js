@@ -26,3 +26,28 @@ function togglePub(header) {
     btn.classList.toggle('open');
   }
 }
+
+// Expand/Collapse all abstracts
+function toggleAllPubs(btn) {
+  var details = document.querySelectorAll('.pub-details');
+  var toggles = document.querySelectorAll('.pub-toggle');
+  var expanding = btn.textContent.trim() === 'Expand All';
+
+  details.forEach(function (d) {
+    if (expanding) {
+      d.classList.add('open');
+    } else {
+      d.classList.remove('open');
+    }
+  });
+
+  toggles.forEach(function (t) {
+    if (expanding) {
+      t.classList.add('open');
+    } else {
+      t.classList.remove('open');
+    }
+  });
+
+  btn.textContent = expanding ? 'Collapse All' : 'Expand All';
+}

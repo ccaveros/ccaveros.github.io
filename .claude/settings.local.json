@@ -2,7 +2,39 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.williamgnomikos.com)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(python:*)",
+      "Bash(python -c:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate research interests order, add abstracts, PICP award, and links\n\n- Swap Civil Society before Aid in research interests keywords\n- Split bio sentence at \"I manage\" for cleaner flow\n- Add real abstracts for all 4 Under Review papers\n- Add Program in Comparative Politics Graduate Research Award to fellowships\n- Link Sudan corridors article to RIPIL blog post\n- Link Cyanne E. Loyle to her academic website\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRemove redundant PhD line from bio, split PSU awards into University/College vs Department\n\n- Remove \"I am a Dual Title Ph.D. Student at Penn State\" from bio \\(already in subtitle\\)\n- Split Penn State awards into University/College and Department sections matching CV structure\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "WebFetch(domain:macartan.github.io)",
+      "WebFetch(domain:chrisblattman.com)",
+      "WebFetch(domain:williamgnomikos.com)",
+      "WebFetch(domain:theacademicdesigner.com)",
+      "WebFetch(domain:yiqingxu.org)",
+      "Bash(git commit:*)",
+      "Bash(gh run list:*)",
+      "WebFetch(domain:ccaveros.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.icds.psu.edu)",
+      "WebFetch(domain:recipe.cepr.org)",
+      "WebFetch(domain:junior-quant-conflict-workshop.github.io)",
+      "WebFetch(domain:www.ripilab.com)",
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.cyanneloyle.com)",
+      "WebFetch(domain:bsky.app)",
+      "WebFetch(domain:ginopauselli.com)",
+      "WebFetch(domain:jaredfedgerton.net)",
+      "WebFetch(domain:www.giancarlovisconti.com)",
+      "WebFetch(domain:www.politikaspolecnost.cz)",
+      "WebFetch(domain:somosprismauc3m.wordpress.com)",
+      "WebFetch(domain:cbap.cz)",
+      "WebFetch(domain:www.ocf.berkeley.edu)",
+      "WebFetch(domain:becarios.fundacionlacaixa.org)",
+      "WebFetch(domain:www.ginopauselli.com)"
     ]
   }
 }
