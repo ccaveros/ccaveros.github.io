@@ -426,6 +426,50 @@ li {
   border-color: var(--burgundy);
 }
 
+/* ===== Expand All Button ===== */
+.expand-all-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--burgundy);
+  background: none;
+  border: 1px solid var(--burgundy);
+  border-radius: 4px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.expand-all-btn:hover {
+  background: var(--burgundy);
+  color: #fff;
+}
+
+/* ===== Policy Publications (Simple) ===== */
+.pub-item--simple {
+  padding: 0.85rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.pub-item--simple:hover {
+  box-shadow: none;
+  transform: none;
+  background: rgba(123, 45, 59, 0.02);
+}
+
+.pub-item--simple:last-child {
+  border-bottom: none;
+}
+
+.pub-item--simple .pub-title {
+  font-size: 0.95rem;
+}
+
 /* ===== Education List ===== */
 .edu-list {
   list-style: none;
