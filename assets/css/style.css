@@ -182,19 +182,23 @@ li {
 /* ===== Hero Section (Homepage) ===== */
 .hero {
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
   padding: 2.5rem 0 3.5rem;
 }
 
-.hero-top {
+.hero-left {
+  flex-shrink: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  text-align: center;
+  width: 220px;
 }
 
 .hero-photo {
   flex-shrink: 0;
+  margin-bottom: 1rem;
 }
 
 .hero-photo img {
@@ -206,10 +210,17 @@ li {
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--text-light);
   line-height: 1.5;
+}
+
+.hero-welcome {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: var(--text);
 }
 
 .hero-bio {
@@ -236,10 +247,11 @@ li {
 .hero-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 
 .hero-links a {
@@ -759,14 +771,26 @@ li {
     display: block;
   }
 
-  .hero-top {
+  .hero {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    width: 100%;
   }
 
   .hero-photo img {
     width: 160px;
     height: 160px;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-welcome {
+    text-align: center;
   }
 
   .hero-links {
