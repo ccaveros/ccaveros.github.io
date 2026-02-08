@@ -1,8 +1,8 @@
 /* ===== CSS Variables ===== */
 :root {
-  --burgundy: #1A5C5A;
-  --burgundy-light: #248280;
-  --burgundy-dark: #134240;
+  --burgundy: #7B2D3B;
+  --burgundy-light: #9E4A5A;
+  --burgundy-dark: #5C1F2B;
   --bg: #FAFAF7;
   --bg-card: #FFFFFF;
   --text: #2D2D2D;
@@ -179,49 +179,91 @@ li {
   padding: 3rem 2rem 5rem;
 }
 
-/* ===== Intro Section (Homepage) ===== */
-.intro {
-  padding: 3rem 0 4rem;
+/* ===== Hero Section (Homepage) ===== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 0 3.5rem;
 }
 
-.intro-accent {
-  width: 40px;
-  height: 3px;
-  background: var(--burgundy);
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
-.intro-text {
-  font-size: 1.15rem;
-  line-height: 1.85;
-  margin-bottom: 1.25rem;
-  max-width: 800px;
+.hero-photo {
+  flex-shrink: 0;
 }
 
-.intro-text a {
-  color: var(--burgundy);
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--border);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.hero-bio {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 0.6rem;
+}
+
+.hero-bio:last-of-type {
+  margin-bottom: 0;
+}
+
+.hero-bio a {
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 2px;
-  transition: text-decoration-color var(--transition);
+  transition: color var(--transition), text-decoration-color var(--transition);
 }
 
-.intro-text a:hover {
-  text-decoration-color: var(--burgundy);
+.hero-bio a:hover {
+  text-decoration-color: var(--burgundy-light);
 }
 
-.intro-link {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 1.05rem;
-  font-weight: 500;
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all var(--transition);
+}
+
+.hero-links a:hover {
   color: var(--burgundy);
-  text-decoration: none;
-  transition: opacity var(--transition);
+  border-color: var(--burgundy);
+  background: rgba(123, 45, 59, 0.04);
 }
 
-.intro-link:hover {
-  opacity: 0.7;
+.hero-links svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* ===== Section Styles ===== */
@@ -424,7 +466,7 @@ li {
 .pub-item--simple:hover {
   box-shadow: none;
   transform: none;
-  background: rgba(26, 92, 90, 0.02);
+  background: rgba(123, 45, 59, 0.02);
 }
 
 .pub-item--simple:last-child {
@@ -504,7 +546,7 @@ li {
 }
 
 .award-item:hover {
-  background: rgba(26, 92, 90, 0.03);
+  background: rgba(123, 45, 59, 0.03);
 }
 
 .award-item:last-child {
@@ -573,7 +615,7 @@ li {
   background: var(--burgundy-dark);
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(26, 92, 90, 0.25);
+  box-shadow: 0 4px 12px rgba(123, 45, 59, 0.25);
 }
 
 /* ===== Research Interests Tags ===== */
@@ -588,7 +630,7 @@ li {
 
 .interests li {
   padding: 0.4rem 1rem;
-  background: rgba(26, 92, 90, 0.07);
+  background: rgba(123, 45, 59, 0.07);
   color: var(--burgundy);
   border-radius: 20px;
   font-size: 0.85rem;
@@ -717,12 +759,27 @@ li {
     display: block;
   }
 
-  .intro {
-    padding: 2rem 0 3rem;
+  .hero-top {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .intro-text {
-    font-size: 1.05rem;
+  .hero-photo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .hero-links a {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.65rem;
+  }
+
+  .hero-bio {
+    font-size: 0.9rem;
   }
 
   .section-title {
@@ -793,12 +850,31 @@ li {
     padding: 1.25rem 1rem 2.5rem;
   }
 
-  .intro-text {
-    font-size: 1rem;
+  .hero-photo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
   }
 
   .pub-item {
     padding: 0.85rem;
+  }
+
+  .hero-links {
+    gap: 0.5rem;
+  }
+
+  .hero-links a {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.55rem;
+  }
+
+  .interests li {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
   }
 
   .cv-embed iframe {
@@ -813,6 +889,18 @@ li {
   border-radius: 2px;
 }
 
+/* ===== Profile Photo Polish ===== */
+.hero-photo img {
+  box-shadow: 0 8px 24px rgba(123, 45, 59, 0.1),
+              0 2px 6px rgba(123, 45, 59, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-photo img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(123, 45, 59, 0.14),
+              0 4px 8px rgba(123, 45, 59, 0.1);
+}
 
 /* ===== Reduced Motion ===== */
 @media (prefers-reduced-motion: reduce) {
