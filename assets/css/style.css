@@ -199,13 +199,10 @@ li {
   border: 4px solid var(--border);
 }
 
-.hero-text h1 {
-  margin-bottom: 0.25rem;
-}
-
 .hero-subtitle {
-  font-size: 1.05rem;
-  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text);
   margin-bottom: 1.25rem;
   line-height: 1.5;
 }
