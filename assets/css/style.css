@@ -232,17 +232,11 @@ li {
   line-height: 1.5;
 }
 
-.hero-welcome {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  color: var(--text);
-}
 
 .hero-bio {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.85;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.85rem;
 }
 
 .hero-bio:last-of-type {
@@ -296,24 +290,14 @@ li {
 
 /* ===== Section Styles ===== */
 .section {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 .section-title {
   font-size: 1.6rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--burgundy);
   margin-bottom: 1.5rem;
-  display: inline-block;
 }
 
-.section-divider {
-  width: 60px;
-  border: none;
-  border-top: 2px solid var(--burgundy);
-  margin: 3rem auto;
-  opacity: 0.4;
-}
 
 /* ===== Page Header ===== */
 .page-header {
@@ -512,16 +496,11 @@ li {
 }
 
 .edu-item {
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--border);
+  padding: 0.65rem 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-}
-
-.edu-item:last-child {
-  border-bottom: none;
 }
 
 .edu-info {
@@ -529,22 +508,22 @@ li {
 }
 
 .edu-degree {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
   display: block;
 }
 
 .edu-school {
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   display: block;
   margin-top: 0.1rem;
 }
 
 .edu-year {
-  color: var(--burgundy);
+  color: var(--text-light);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   flex-shrink: 0;
   white-space: nowrap;
 }
@@ -557,9 +536,6 @@ li {
 .awards-group h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid var(--burgundy);
-  display: inline-block;
 }
 
 .award-item {
@@ -815,10 +791,6 @@ li {
     text-align: left;
   }
 
-  .hero-welcome {
-    text-align: center;
-  }
-
   .hero-links {
     justify-content: center;
   }
@@ -888,9 +860,6 @@ li {
     margin-bottom: 2rem;
   }
 
-  .section-divider {
-    margin: 2rem auto;
-  }
 }
 
 @media (max-width: 480px) {
