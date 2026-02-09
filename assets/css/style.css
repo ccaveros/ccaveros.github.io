@@ -631,7 +631,8 @@ li {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  text-align: center;
   padding: 0.6rem 1.25rem;
   background: var(--burgundy);
   color: #fff;
