@@ -101,6 +101,13 @@ li {
   gap: 0.5rem;
 }
 
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
 .nav-name {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.6rem;
@@ -112,6 +119,13 @@ li {
 
 .nav-name:hover {
   color: var(--burgundy);
+}
+
+.nav-affiliation {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  letter-spacing: 0.04em;
+  font-weight: 400;
 }
 
 .nav-links {
@@ -734,6 +748,10 @@ li {
 
   .nav-name {
     font-size: 1.15rem;
+  }
+
+  .nav-affiliation {
+    display: none;
   }
 
   .nav-links {
