@@ -23,22 +23,22 @@
 
 /* ===== Dark Mode ===== */
 body.dark-mode {
-  --bg: #1A1B1E;
-  --bg-card: #242528;
-  --text: #E8E6E3;
-  --text-light: #A0A0A0;
-  --border: #3A3A3E;
+  --bg: #24262B;
+  --bg-card: #2E3035;
+  --text: #ECECEA;
+  --text-light: #B0B0B0;
+  --border: #44464B;
   --burgundy: #C4697A;
   --burgundy-light: #D88A97;
   --burgundy-dark: #9E4A5A;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --nav-bg: rgba(26, 27, 30, 0.95);
-  --nav-bg-solid: rgba(26, 27, 30, 0.98);
-  --accent-tint: rgba(196, 105, 122, 0.12);
-  --accent-tint-subtle: rgba(196, 105, 122, 0.06);
-  --accent-tint-faint: rgba(196, 105, 122, 0.04);
-  --accent-tint-hover: rgba(196, 105, 122, 0.06);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --nav-bg: rgba(36, 38, 43, 0.95);
+  --nav-bg-solid: rgba(36, 38, 43, 0.98);
+  --accent-tint: rgba(196, 105, 122, 0.14);
+  --accent-tint-subtle: rgba(196, 105, 122, 0.08);
+  --accent-tint-faint: rgba(196, 105, 122, 0.05);
+  --accent-tint-hover: rgba(196, 105, 122, 0.08);
 }
 
 /* ===== Reset & Base ===== */
