@@ -23,18 +23,18 @@
 
 /* ===== Dark Mode ===== */
 body.dark-mode {
-  --bg: #24262B;
-  --bg-card: #2E3035;
-  --text: #ECECEA;
-  --text-light: #B0B0B0;
-  --border: #44464B;
+  --bg: #2C2E33;
+  --bg-card: #35373D;
+  --text: #EDEDEB;
+  --text-light: #B8B8B8;
+  --border: #4D4F55;
   --burgundy: #C4697A;
   --burgundy-light: #D88A97;
   --burgundy-dark: #9E4A5A;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.35);
-  --nav-bg: rgba(36, 38, 43, 0.95);
-  --nav-bg-solid: rgba(36, 38, 43, 0.98);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --nav-bg: rgba(44, 46, 51, 0.95);
+  --nav-bg-solid: rgba(44, 46, 51, 0.98);
   --accent-tint: rgba(196, 105, 122, 0.14);
   --accent-tint-subtle: rgba(196, 105, 122, 0.08);
   --accent-tint-faint: rgba(196, 105, 122, 0.05);
