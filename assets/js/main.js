@@ -1,3 +1,11 @@
+// Dark mode — apply saved preference immediately to prevent flash
+(function () {
+  var saved = localStorage.getItem('dark-mode');
+  if (saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.body.classList.add('dark-mode');
+  }
+})();
+
 // Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
@@ -13,6 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
       link.addEventListener('click', function () {
         links.classList.remove('open');
       });
+    });
+  }
+
+  // Dark mode toggle
+  var darkToggle = document.querySelector('.dark-mode-toggle');
+  if (darkToggle) {
+    darkToggle.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      var isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('dark-mode', isDark);
     });
   }
 });
