@@ -108,7 +108,7 @@ li {
 
 /* ===== Navigation ===== */
 .nav {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
   background: var(--nav-bg);
