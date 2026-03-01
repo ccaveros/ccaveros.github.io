@@ -1,3 +1,12 @@
+// Language preference — apply immediately to prevent flash
+(function () {
+  var saved = localStorage.getItem('lang');
+  if (saved === 'es' || (saved === null && (navigator.language || '').toLowerCase().startsWith('es'))) {
+    document.body.classList.add('lang-es');
+    document.documentElement.lang = 'es';
+  }
+})();
+
 // Dark mode — apply saved preference immediately to prevent flash
 (function () {
   var saved = localStorage.getItem('dark-mode');
@@ -33,6 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
       localStorage.setItem('dark-mode', isDark);
     });
   }
+
+  // Language toggle
+  var langToggle = document.querySelector('.lang-toggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', function () {
+      var isSpanish = document.body.classList.toggle('lang-es');
+      document.documentElement.lang = isSpanish ? 'es' : 'en';
+      localStorage.setItem('lang', isSpanish ? 'es' : 'en');
+    });
+  }
 });
 
 // Expandable publication cards
@@ -49,23 +68,15 @@ function togglePub(header) {
 function toggleAllPubs(btn) {
   var details = document.querySelectorAll('.pub-details');
   var toggles = document.querySelectorAll('.pub-toggle');
-  var expanding = btn.textContent.trim() === 'Expand All';
+  var expanding = btn.getAttribute('data-state') !== 'expanded';
 
   details.forEach(function (d) {
-    if (expanding) {
-      d.classList.add('open');
-    } else {
-      d.classList.remove('open');
-    }
+    d.classList[expanding ? 'add' : 'remove']('open');
   });
 
   toggles.forEach(function (t) {
-    if (expanding) {
-      t.classList.add('open');
-    } else {
-      t.classList.remove('open');
-    }
+    t.classList[expanding ? 'add' : 'remove']('open');
   });
 
-  btn.textContent = expanding ? 'Collapse All' : 'Expand All';
+  btn.setAttribute('data-state', expanding ? 'expanded' : 'collapsed');
 }
