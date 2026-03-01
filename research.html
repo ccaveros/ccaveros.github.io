@@ -18,18 +18,22 @@
     <div class="nav-inner">
       <div class="nav-brand">
         <a href="index.html" class="nav-name">Cecilia Cavero-Sanchez</a>
-        <span class="nav-affiliation">Political Science · Penn State</span>
+        <span class="nav-affiliation"><span class="en">Political Science · Penn State</span><span class="es">Ciencia Política · Penn State</span></span>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html" class="active">Research</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="awards.html">Awards</a></li>
+        <li><a href="index.html"><span class="en">Home</span><span class="es">Inicio</span></a></li>
+        <li><a href="research.html" class="active"><span class="en">Research</span><span class="es">Investigación</span></a></li>
+        <li><a href="teaching.html"><span class="en">Teaching</span><span class="es">Docencia</span></a></li>
+        <li><a href="awards.html"><span class="en">Awards</span><span class="es">Premios</span></a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
+      <button class="lang-toggle" aria-label="Switch language">
+        <span class="lang-label-en">ES</span>
+        <span class="lang-label-es">EN</span>
+      </button>
       <button class="dark-mode-toggle" aria-label="Toggle dark mode">
         <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -42,8 +46,8 @@
     <!-- Under Review -->
     <section class="section">
       <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:0.5rem;">
-        <h2 class="section-title">Under Review</h2>
-        <button class="expand-all-btn" onclick="toggleAllPubs(this)" aria-label="Expand all abstracts">Expand All</button>
+        <h2 class="section-title"><span class="en">Under Review</span><span class="es">En Revisión</span></h2>
+        <button class="expand-all-btn" onclick="toggleAllPubs(this)" data-state="collapsed" aria-label="Expand all abstracts"><span class="en">Expand All</span><span class="es">Expandir todo</span></button>
       </div>
       <ol class="pub-list" reversed>
 
@@ -106,7 +110,7 @@
 
     <!-- Policy Publications -->
     <section class="section">
-      <h2 class="section-title">Policy Publications</h2>
+      <h2 class="section-title"><span class="en">Policy Publications</span><span class="es">Publicaciones de Política</span></h2>
       <ol class="pub-list pub-list--simple" reversed>
 
         <li class="pub-item pub-item--simple">
