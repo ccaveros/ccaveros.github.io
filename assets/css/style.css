@@ -492,6 +492,48 @@ li {
   border-color: var(--burgundy);
 }
 
+/* ===== Publication Badges ===== */
+.pub-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.pub-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pub-badge--review {
+  background: rgba(59, 125, 216, 0.1);
+  color: var(--burgundy);
+  border: 1px solid rgba(59, 125, 216, 0.3);
+}
+
+.pub-badge--rr {
+  background: rgba(180, 130, 20, 0.1);
+  color: #8A6200;
+  border: 1px solid rgba(180, 130, 20, 0.3);
+}
+
+body.dark-mode .pub-badge--rr {
+  color: #D4A840;
+  background: rgba(212, 168, 64, 0.12);
+  border-color: rgba(212, 168, 64, 0.3);
+}
+
+.pub-badge-venue {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
 /* ===== Expand All Button ===== */
 .expand-all-btn {
   font-family: 'Inter', sans-serif;
@@ -689,20 +731,87 @@ li {
 }
 
 .interests li {
-  padding: 0.4rem 1rem;
-  background: var(--accent-tint);
+  padding: 0.35rem 0.9rem;
+  background: transparent;
   color: var(--burgundy);
+  border: 1.5px solid var(--burgundy);
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
   margin-bottom: 0;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
   cursor: default;
+  opacity: 0.85;
 }
 
 .interests li:hover {
   background: var(--burgundy);
   color: #fff;
+  opacity: 1;
+}
+
+/* ===== Fieldwork ===== */
+.fieldwork-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fieldwork-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  border-radius: 4px;
+  transition: background var(--transition);
+  gap: 1rem;
+}
+
+.fieldwork-item:hover {
+  background: var(--accent-tint-hover);
+}
+
+.fieldwork-item:last-child {
+  border-bottom: none;
+}
+
+.fieldwork-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.fieldwork-location {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.fieldwork-pin {
+  width: 14px;
+  height: 14px;
+  fill: var(--burgundy);
+  flex-shrink: 0;
+}
+
+.fieldwork-note {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  background: var(--accent-tint);
+  color: var(--burgundy);
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.fieldwork-year {
+  font-size: 0.85rem;
+  color: var(--burgundy);
+  font-weight: 600;
+  flex-shrink: 0;
 }
 
 /* ===== Funding ===== */
@@ -710,6 +819,12 @@ li {
   font-size: 0.9rem;
   color: var(--text-light);
   line-height: 1.8;
+}
+
+/* ===== Hero Link Labels ===== */
+.link-label {
+  font-size: 0.78rem;
+  font-weight: 500;
 }
 
 /* ===== Footer ===== */
@@ -730,9 +845,21 @@ li {
   gap: 1rem;
 }
 
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
 .footer-text {
   font-size: 0.8rem;
   color: var(--text-light);
+}
+
+.footer-updated {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  opacity: 0.65;
 }
 
 .footer-links {
