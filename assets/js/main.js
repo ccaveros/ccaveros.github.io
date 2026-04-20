@@ -78,11 +78,12 @@ function togglePub(header) {
       { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' },
       { title: 'The Demand for Rebel Rules', href: 'research.html' }
     ],
-    'Multi-Method Research': [
-      { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' }
+    'Methods': [
+      { title: 'Human Rights Consolidation or Fragmentation?', href: 'research.html' }
     ],
     'Colombia': [
-      { title: 'Elections under Contested Authority', href: 'research.html' }
+      { title: 'Elections under Contested Authority', href: 'research.html' },
+      { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' }
     ]
   };
 
