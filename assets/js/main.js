@@ -90,7 +90,7 @@ function togglePub(header) {
 
   var popover = document.createElement('div');
   popover.id = 'interest-popover';
-  popover.innerHTML = '<p class="popover-label">Related work</p><ul class="popover-papers"></ul>';
+  popover.innerHTML = '<p class="popover-label"></p><ul class="popover-papers"></ul>';
   document.body.appendChild(popover);
 
   var hideTimer = null;
@@ -101,6 +101,9 @@ function togglePub(header) {
     if (!papers || papers.length === 0) return;
 
     clearTimeout(hideTimer);
+
+    var isEs = document.body.classList.contains('lang-es');
+    popover.querySelector('.popover-label').textContent = isEs ? 'Publicaciones relacionadas' : 'Related work';
 
     var list = popover.querySelector('.popover-papers');
     list.innerHTML = papers.map(function (p) {
