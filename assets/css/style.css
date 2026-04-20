@@ -1,8 +1,8 @@
 /* ===== CSS Variables ===== */
 :root {
-  --burgundy: #2C5F8E;
-  --burgundy-light: #4A7BAD;
-  --burgundy-dark: #1A4670;
+  --burgundy: #3B7DD8;
+  --burgundy-light: #5D95E8;
+  --burgundy-dark: #2A66C0;
   --bg: #FAFAF7;
   --bg-card: #FFFFFF;
   --text: #2D2D2D;
@@ -15,10 +15,10 @@
   --transition: 0.25s ease;
   --nav-bg: rgba(250, 250, 247, 0.95);
   --nav-bg-solid: rgba(250, 250, 247, 0.98);
-  --accent-tint: rgba(44, 95, 142, 0.07);
-  --accent-tint-subtle: rgba(44, 95, 142, 0.04);
-  --accent-tint-faint: rgba(44, 95, 142, 0.02);
-  --accent-tint-hover: rgba(44, 95, 142, 0.03);
+  --accent-tint: rgba(59, 125, 216, 0.07);
+  --accent-tint-subtle: rgba(59, 125, 216, 0.04);
+  --accent-tint-faint: rgba(59, 125, 216, 0.02);
+  --accent-tint-hover: rgba(59, 125, 216, 0.03);
 }
 
 /* ===== Dark Mode ===== */
@@ -28,17 +28,17 @@ body.dark-mode {
   --text: #EDEDEB;
   --text-light: #B8B8B8;
   --border: #4D4F55;
-  --burgundy: #6A9FCC;
-  --burgundy-light: #8AB8DC;
-  --burgundy-dark: #4A7BAD;
+  --burgundy: #7EB5F0;
+  --burgundy-light: #9ACAF5;
+  --burgundy-dark: #5D95E8;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.3);
   --nav-bg: rgba(44, 46, 51, 0.95);
   --nav-bg-solid: rgba(44, 46, 51, 0.98);
-  --accent-tint: rgba(106, 159, 204, 0.14);
-  --accent-tint-subtle: rgba(106, 159, 204, 0.08);
-  --accent-tint-faint: rgba(106, 159, 204, 0.05);
-  --accent-tint-hover: rgba(106, 159, 204, 0.08);
+  --accent-tint: rgba(126, 181, 240, 0.14);
+  --accent-tint-subtle: rgba(126, 181, 240, 0.08);
+  --accent-tint-faint: rgba(126, 181, 240, 0.05);
+  --accent-tint-hover: rgba(126, 181, 240, 0.08);
 }
 
 /* ===== Reset & Base ===== */
@@ -675,7 +675,7 @@ li {
   background: var(--burgundy-dark);
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(44, 95, 142, 0.25);
+  box-shadow: 0 4px 12px rgba(59, 125, 216, 0.25);
 }
 
 /* ===== Research Interests Tags ===== */
@@ -1082,15 +1082,15 @@ body.lang-es .en-block { display: none !important; }
 
 /* ===== Profile Photo Polish ===== */
 .hero-photo img {
-  box-shadow: 0 8px 24px rgba(44, 95, 142, 0.1),
-              0 2px 6px rgba(44, 95, 142, 0.06);
+  box-shadow: 0 8px 24px rgba(59, 125, 216, 0.1),
+              0 2px 6px rgba(59, 125, 216, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-photo img:hover {
   transform: scale(1.02);
-  box-shadow: 0 12px 32px rgba(44, 95, 142, 0.14),
-              0 4px 8px rgba(44, 95, 142, 0.1);
+  box-shadow: 0 12px 32px rgba(59, 125, 216, 0.14),
+              0 4px 8px rgba(59, 125, 216, 0.1);
 }
 
 /* ===== Reduced Motion ===== */
