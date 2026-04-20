@@ -64,6 +64,88 @@ function togglePub(header) {
   }
 }
 
+// Research interests popover
+(function () {
+  var tagPapers = {
+    'Peace': [
+      { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' },
+      { title: 'The Demand for Rebel Rules', href: 'research.html' }
+    ],
+    'Civil Society': [
+      { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' }
+    ],
+    'Dispute Resolution': [
+      { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' },
+      { title: 'The Demand for Rebel Rules', href: 'research.html' }
+    ],
+    'Multi-Method Research': [
+      { title: 'Human Rights Consolidation or Fragmentation?', href: 'research.html' },
+      { title: 'Elections under Contested Authority', href: 'research.html' },
+      { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' }
+    ],
+    'Colombia': [
+      { title: 'Elections under Contested Authority', href: 'research.html' }
+    ]
+  };
+
+  var popover = document.createElement('div');
+  popover.id = 'interest-popover';
+  popover.innerHTML = '<p class="popover-label">Related work</p><ul class="popover-papers"></ul>';
+  document.body.appendChild(popover);
+
+  var hideTimer = null;
+
+  function showPopover(tag) {
+    var key = tag.getAttribute('data-interest');
+    var papers = tagPapers[key];
+    if (!papers || papers.length === 0) return;
+
+    clearTimeout(hideTimer);
+
+    var list = popover.querySelector('.popover-papers');
+    list.innerHTML = papers.map(function (p) {
+      return '<li><a href="' + p.href + '">' + p.title + '</a></li>';
+    }).join('');
+
+    var rect = tag.getBoundingClientRect();
+    var top = rect.bottom + window.scrollY + 6;
+    var left = rect.left + window.scrollX;
+    var popoverWidth = 260;
+    if (left + popoverWidth > window.innerWidth - 16) {
+      left = Math.max(16, window.innerWidth - popoverWidth - 16);
+    }
+
+    popover.style.top = top + 'px';
+    popover.style.left = left + 'px';
+    popover.classList.add('visible');
+  }
+
+  function scheduleHide() {
+    hideTimer = setTimeout(function () {
+      popover.classList.remove('visible');
+    }, 150);
+  }
+
+  function initPopover() {
+    document.querySelectorAll('.interests li[data-interest]').forEach(function (tag) {
+      var key = tag.getAttribute('data-interest');
+      if (tagPapers[key] && tagPapers[key].length > 0) {
+        tag.style.cursor = 'pointer';
+        tag.addEventListener('mouseenter', function () { showPopover(tag); });
+        tag.addEventListener('mouseleave', scheduleHide);
+      }
+    });
+    popover.addEventListener('mouseenter', function () { clearTimeout(hideTimer); });
+    popover.addEventListener('mouseleave', scheduleHide);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPopover);
+  } else {
+    initPopover();
+  }
+})();
+
 // Expand/Collapse all abstracts
 function toggleAllPubs(btn) {
   var details = document.querySelectorAll('.pub-details');
