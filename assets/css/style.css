@@ -757,6 +757,66 @@ body.dark-mode .pub-badge--rr {
   opacity: 1;
 }
 
+/* ===== Research Interest Popover ===== */
+#interest-popover {
+  position: absolute;
+  z-index: 1000;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  padding: 0.6rem 0.85rem;
+  min-width: 220px;
+  max-width: 290px;
+  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+}
+
+#interest-popover.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+}
+
+.popover-label {
+  font-size: 0.63rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-light);
+  font-family: 'Lato', sans-serif;
+  margin: 0 0 0.4rem;
+}
+
+.popover-papers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popover-papers li {
+  margin-bottom: 0.22rem;
+}
+
+.popover-papers li:last-child {
+  margin-bottom: 0;
+}
+
+.popover-papers a {
+  font-size: 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.35;
+  display: block;
+}
+
+.popover-papers a:hover {
+  color: var(--burgundy);
+}
+
 /* ===== Fieldwork ===== */
 .fieldwork-list {
   list-style: none;
