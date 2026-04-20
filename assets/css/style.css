@@ -821,6 +821,101 @@ body.dark-mode .pub-badge--rr {
   flex-shrink: 0;
 }
 
+/* ===== Media Strip ===== */
+.media-strip {
+  margin-bottom: 3.5rem;
+}
+
+.media-strip-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.media-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.media-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--burgundy);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition);
+  color: inherit;
+}
+
+.media-card:hover {
+  background: var(--accent-tint-subtle);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hover);
+  color: inherit;
+}
+
+.media-card-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background: var(--burgundy);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 0.1rem;
+}
+
+.media-card-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.media-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.media-card-outlet {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--burgundy);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.media-card-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.media-card-meta {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 600px) {
+  .media-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ===== Funding ===== */
 .funding {
   font-size: 0.9rem;
