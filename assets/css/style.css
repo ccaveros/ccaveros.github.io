@@ -531,9 +531,9 @@ body.dark-mode .pub-badge--rr {
 }
 
 .pub-badge--forthcoming {
-  background: rgba(30, 130, 76, 0.12);
-  color: #1a6b3c;
-  border: 1px solid rgba(30, 130, 76, 0.4);
+  background: rgba(22, 163, 74, 0.12);
+  color: #15803d;
+  border: 1px solid rgba(22, 163, 74, 0.45);
 }
 
 body.dark-mode .pub-badge--forthcoming {
