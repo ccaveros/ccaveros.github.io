@@ -542,6 +542,18 @@ body.dark-mode .pub-badge--forthcoming {
   border-color: rgba(61, 220, 132, 0.45);
 }
 
+.pub-badge--preregistered {
+  background: rgba(107, 70, 193, 0.1);
+  color: #6b46c1;
+  border: 1px solid rgba(107, 70, 193, 0.35);
+}
+
+body.dark-mode .pub-badge--preregistered {
+  color: #b794f4;
+  background: rgba(183, 148, 244, 0.15);
+  border-color: rgba(183, 148, 244, 0.4);
+}
+
 .pub-badge-venue {
   font-size: 0.8rem;
   color: var(--text-light);
