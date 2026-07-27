@@ -330,11 +330,12 @@ li {
 }
 
 .section-title {
-  font-size: 1.6rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--burgundy);
+  font-size: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1.5px solid var(--burgundy);
   margin-bottom: 1.5rem;
   display: inline-block;
+  opacity: 0.95;
 }
 
 
@@ -378,7 +379,7 @@ li {
   margin-bottom: 0.75rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 7px;
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
