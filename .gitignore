@@ -21,6 +21,9 @@ codekit-config.json
 # macOS
 .DS_Store
 
+# Private working page (never publish)
+_papers-in-the-works.html
+
 # Jekyll generated files
 .jekyll-cache
 .jekyll-metadata

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blue Options</title>
+<style>
+  body { font-family: 'Inter', sans-serif; background: #FAFAF7; padding: 2rem; }
+  h2 { font-family: Georgia, serif; margin-bottom: 1.5rem; color: #2D2D2D; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; max-width: 720px; }
+  .swatch { border-radius: 10px; overflow: hidden; border: 1px solid #E8E4DF; background: #fff; }
+  .color-block { height: 100px; width: 100%; }
+  .info { padding: 0.75rem 1rem; }
+  .name { font-weight: 600; font-size: 0.95rem; color: #2D2D2D; }
+  .hex { font-size: 0.8rem; color: #6B6B6B; margin-top: 0.2rem; font-family: monospace; }
+  .num { font-size: 0.75rem; font-weight: 700; color: #aaa; margin-bottom: 0.2rem; letter-spacing: 0.05em; }
+  .sample { margin-top: 0.6rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .sample span { font-size: 0.72rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 500; }
+  .current { margin-bottom: 2rem; }
+  .current .color-block { height: 60px; border-radius: 8px; margin-bottom: 0.5rem; }
+  .label { font-size: 0.85rem; color: #6B6B6B; }
+</style>
+</head>
+<body>
+
+<h2>Current color</h2>
+<div class="current" style="max-width:200px;">
+  <div class="color-block" style="background:#2C5F8E; border:1px solid #E8E4DF; border-radius:8px;"></div>
+  <div class="label">Steel blue <code>#2C5F8E</code> &mdash; current (too grey)</div>
+</div>
+
+<h2>Options</h2>
+<div class="grid">
+
+  <div class="swatch">
+    <div class="color-block" style="background:#1A72BE;"></div>
+    <div class="info">
+      <div class="num">1</div>
+      <div class="name">Cerulean</div>
+      <div class="hex">#1A72BE</div>
+      <div class="sample">
+        <span style="background:rgba(26,114,190,0.1); color:#1A72BE;">tag</span>
+        <span style="background:#1A72BE; color:#fff;">button</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch">
+    <div class="color-block" style="background:#2255A4;"></div>
+    <div class="info">
+      <div class="num">2</div>
+      <div class="name">Cobalt</div>
+      <div class="hex">#2255A4</div>
+      <div class="sample">
+        <span style="background:rgba(34,85,164,0.1); color:#2255A4;">tag</span>
+        <span style="background:#2255A4; color:#fff;">button</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch">
+    <div class="color-block" style="background:#3B7DD8;"></div>
+    <div class="info">
+      <div class="num">3</div>
+      <div class="name">Cornflower</div>
+      <div class="hex">#3B7DD8</div>
+      <div class="sample">
+        <span style="background:rgba(59,125,216,0.1); color:#3B7DD8;">tag</span>
+        <span style="background:#3B7DD8; color:#fff;">button</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch">
+    <div class="color-block" style="background:#2E4AAD;"></div>
+    <div class="info">
+      <div class="num">4</div>
+      <div class="name">Indigo-blue</div>
+      <div class="hex">#2E4AAD</div>
+      <div class="sample">
+        <span style="background:rgba(46,74,173,0.1); color:#2E4AAD;">tag</span>
+        <span style="background:#2E4AAD; color:#fff;">button</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch">
+    <div class="color-block" style="background:#0F4C81;"></div>
+    <div class="info">
+      <div class="num">5</div>
+      <div class="name">Yale blue</div>
+      <div class="hex">#0F4C81</div>
+      <div class="sample">
+        <span style="background:rgba(15,76,129,0.1); color:#0F4C81;">tag</span>
+        <span style="background:#0F4C81; color:#fff;">button</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch">
+    <div class="color-block" style="background:#1860C4;"></div>
+    <div class="info">
+      <div class="num">6</div>
+      <div class="name">Sapphire</div>
+      <div class="hex">#1860C4</div>
+      <div class="sample">
+        <span style="background:rgba(24,96,196,0.1); color:#1860C4;">tag</span>
+        <span style="background:#1860C4; color:#fff;">button</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

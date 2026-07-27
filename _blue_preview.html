@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blue Options</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #FAFAF7; padding: 2rem; }
+  h2 { font-size: 0.72rem; letter-spacing: .1em; text-transform: uppercase; color: #999; margin-bottom: 1.25rem; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 680px; }
+  .swatch { border-radius: 10px; overflow: hidden; border: 1px solid #E8E4DF; background: #fff; }
+  .block { height: 90px; }
+  .info { padding: 0.75rem 1rem; }
+  .num { font-size: 0.65rem; font-weight: 700; color: #bbb; letter-spacing: .06em; margin-bottom: .2rem; }
+  .name { font-weight: 600; font-size: 0.9rem; color: #2D2D2D; }
+  .hex { font-size: 0.75rem; color: #999; margin-top: .15rem; font-family: monospace; }
+  .sample { margin-top: .5rem; display: flex; gap: .35rem; }
+  .sample span { font-size: 0.7rem; padding: .15rem .5rem; border-radius: 4px; font-weight: 600; }
+
+  .current { border-color: #aaa; }
+  .current .block { background: #3B7DD8; }
+
+  .a .block { background: #3A6EA8; }
+  .b .block { background: #3567A8; }
+  .c .block { background: #2E6DB4; }
+  .d .block { background: #4070B5; }
+  .e .block { background: #2960A8; }
+  .f .block { background: #3B6BA0; }
+</style>
+</head>
+<body>
+<h2>Blue options — current vs. alternatives</h2>
+<div class="grid">
+
+  <div class="swatch current">
+    <div class="block"></div>
+    <div class="info">
+      <div class="num">Current</div>
+      <div class="name">Cornflower</div>
+      <div class="hex">#3B7DD8</div>
+      <div class="sample">
+        <span style="background:rgba(59,125,216,.12);color:#3B7DD8;border:1px solid rgba(59,125,216,.3);">tag</span>
+        <span style="background:#3B7DD8;color:#fff;">btn</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch a">
+    <div class="block"></div>
+    <div class="info">
+      <div class="num">A</div>
+      <div class="name">Slate Blue</div>
+      <div class="hex">#3A6EA8</div>
+      <div class="sample">
+        <span style="background:rgba(58,110,168,.12);color:#3A6EA8;border:1px solid rgba(58,110,168,.3);">tag</span>
+        <span style="background:#3A6EA8;color:#fff;">btn</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch b">
+    <div class="block"></div>
+    <div class="info">
+      <div class="num">B</div>
+      <div class="name">Denim</div>
+      <div class="hex">#3567A8</div>
+      <div class="sample">
+        <span style="background:rgba(53,103,168,.12);color:#3567A8;border:1px solid rgba(53,103,168,.3);">tag</span>
+        <span style="background:#3567A8;color:#fff;">btn</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch c">
+    <div class="block"></div>
+    <div class="info">
+      <div class="num">C</div>
+      <div class="name">French Blue</div>
+      <div class="hex">#2E6DB4</div>
+      <div class="sample">
+        <span style="background:rgba(46,109,180,.12);color:#2E6DB4;border:1px solid rgba(46,109,180,.3);">tag</span>
+        <span style="background:#2E6DB4;color:#fff;">btn</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch d">
+    <div class="block"></div>
+    <div class="info">
+      <div class="num">D</div>
+      <div class="name">Steel-Cornflower</div>
+      <div class="hex">#4070B5</div>
+      <div class="sample">
+        <span style="background:rgba(64,112,181,.12);color:#4070B5;border:1px solid rgba(64,112,181,.3);">tag</span>
+        <span style="background:#4070B5;color:#fff;">btn</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch e">
+    <div class="block"></div>
+    <div class="info">
+      <div class="num">E</div>
+      <div class="name">Cobalt Mid</div>
+      <div class="hex">#2960A8</div>
+      <div class="sample">
+        <span style="background:rgba(41,96,168,.12);color:#2960A8;border:1px solid rgba(41,96,168,.3);">tag</span>
+        <span style="background:#2960A8;color:#fff;">btn</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
