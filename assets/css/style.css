@@ -163,7 +163,10 @@ body.dark-mode .icon-sun { display: inline; }
   margin-bottom: 1.75rem;
 }
 .rows > li:last-child { margin-bottom: 0; }
-.row-label { font-size: .88rem; color: var(--ink-2); font-variant-numeric: tabular-nums; padding-top: .25rem; padding-right: 1.2rem; }
+/* The margin column carries the accent. Status boxes already did; years do
+   it too, so every list page has the same colour rhythm down its left edge
+   and the accent keeps one job in one place. */
+.row-label { font-size: .88rem; color: var(--accent); font-variant-numeric: tabular-nums; padding-top: .25rem; padding-right: 1.2rem; }
 /* No vertical rule. With one or two entries per section it read as a stub
    rather than as a column, which is what kept making the page look ruled. */
 .row-content { padding-left: 0; }
