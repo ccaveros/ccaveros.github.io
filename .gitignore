@@ -30,3 +30,6 @@ _papers-in-the-works.html
 .sass-cache
 _asset_bundler_cache
 _site
+
+# Claude Code local settings, never publish
+.claude/
