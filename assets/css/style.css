@@ -108,19 +108,21 @@ body.dark-mode .icon-sun { display: inline; }
 /* ---------- hero: text column, vertical rule, margin rail ---------- */
 .hero { display: grid; grid-template-columns: 1fr 216px; gap: 0; align-items: start; margin: 3rem 0 0; }
 
-.hero-name {
+/* The masthead already carries the name, so the page opens with the claim
+   rather than repeating it. This is the h1. */
+.hero-standfirst {
   font-family: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
-  font-size: 3rem; font-weight: 400; line-height: 1.04; letter-spacing: -.01em;
-  margin: 0 0 1.1rem;
+  font-size: 2.3rem; font-weight: 400; font-style: normal;
+  line-height: 1.1; letter-spacing: -.01em;
+  margin: 0 0 1.5rem; max-width: 22ch;
 }
-.hero-standfirst { font-size: 1.22rem; line-height: 1.45; margin: 0 0 1.3rem; max-width: 34ch; font-style: italic; }
 .hero-bio { font-size: .98rem; line-height: 1.66; color: var(--ink-2); margin: 0 0 .9rem; max-width: 60ch; padding-right: 2.5rem; }
 .hero-bio:last-child { margin-bottom: 0; }
 /* Links inside running prose carry the accent, which is what distinguishes
    them now that nothing is underlined. */
 .hero-bio a, .prose a { color: var(--accent); }
 
-.rail { border-left: 1px solid var(--rule); padding-left: 2rem; }
+.rail { padding-left: 2rem; }
 /* Kept for the day a real portrait goes back in. No placeholder stands in
    for it in the meantime: an empty coloured rectangle reads as a missing
    asset, not as design. */
@@ -157,7 +159,9 @@ body.dark-mode .icon-sun { display: inline; }
 }
 .rows > li:last-child { margin-bottom: 0; }
 .row-label { font-size: .88rem; color: var(--ink-2); font-variant-numeric: tabular-nums; padding-top: .25rem; padding-right: 1.2rem; }
-.row-content { border-left: 1px solid var(--rule); padding-left: 1.6rem; }
+/* No vertical rule. With one or two entries per section it read as a stub
+   rather than as a column, which is what kept making the page look ruled. */
+.row-content { padding-left: 0; }
 .row-title { font-size: 1.02rem; font-weight: 700; line-height: 1.28; margin: 0 0 .3rem; }
 /* A linked title takes the accent, so a reader can tell which entries in a
    list are clickable without any underline being drawn. */
@@ -306,8 +310,7 @@ body.lang-es .en-block { display: none !important; }
   .rail img { width: 100px; flex: 0 0 auto; margin-bottom: 0; }
   .rail-cap { border-bottom: 0; padding-bottom: 0; margin-bottom: .5rem; }
 
-  .hero-name { font-size: 2.15rem; }
-  .hero-standfirst { font-size: 1.1rem; }
+  .hero-standfirst { font-size: 1.75rem; max-width: none; }
 
   .rows > li { grid-template-columns: 1fr; }
   .row-label { padding: 0 0 .4rem; font-style: italic; }
