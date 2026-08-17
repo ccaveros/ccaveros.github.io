@@ -71,7 +71,10 @@ a:hover {
    at rest. */
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.container { max-width: var(--measure); margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+.container { max-width: var(--measure); margin: 0 auto; padding: 2.75rem 2rem 5rem; }
+/* Nothing adds its own top margin at the top of the page: the container
+   padding is the only gap under the masthead. */
+.container > *:first-child { margin-top: 0; }
 
 /* ---------- masthead ---------- */
 .nav { max-width: var(--measure); margin: 0 auto; padding: 0 2rem; }
@@ -138,11 +141,13 @@ body.dark-mode .icon-sun { display: inline; }
 /* Section headings use the display face and outrank entry titles by size,
    face and weight at once. Before this they were smaller than the titles
    underneath them, so each list read as louder than its own heading. */
+/* No rule under section headings either. The display face at this size,
+   plus the space above it, separates sections on its own. One line on the
+   page, under the masthead, and that is the lot. */
 .section-title {
   font-family: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
   font-size: 1.45rem; font-weight: 400; letter-spacing: -.01em; line-height: 1.15;
-  margin: 0 0 1.4rem; padding-bottom: .5rem;
-  border-bottom: 2px solid var(--ink);
+  margin: 0 0 1.25rem; padding: 0; border: 0;
 }
 
 /* ---------- the row pattern, used by every list on the site ----------
@@ -249,8 +254,7 @@ body.dark-mode .icon-sun { display: inline; }
 .section-head {
   display: flex; align-items: baseline; justify-content: space-between;
   gap: 1rem; flex-wrap: wrap;
-  margin: 0 0 1.5rem; padding-bottom: .5rem;
-  border-bottom: 2px solid var(--ink);
+  margin: 0 0 1.25rem;
 }
 .section-head .section-title { margin: 0; padding: 0; border: 0; line-height: 1.15; }
 
