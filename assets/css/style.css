@@ -173,7 +173,10 @@ body.dark-mode .icon-sun { display: inline; }
 /* No vertical rule. With one or two entries per section it read as a stub
    rather than as a column, which is what kept making the page look ruled. */
 .row-content { padding-left: 0; }
-.row-title { font-size: 1.02rem; font-weight: 700; line-height: 1.28; margin: 0 0 .3rem; }
+/* Not bold. Caslon at this size goes heavy, and on awards the title is the
+   only thing in the row, so the page turned into a wall of bold. Full ink
+   against the secondary tone of everything else does the same job. */
+.row-title { font-size: 1.08rem; font-weight: 400; line-height: 1.3; margin: 0 0 .3rem; }
 /* A linked title takes the accent, so a reader can tell which entries in a
    list are clickable without any underline being drawn. */
 .row-title a, .row-title a:link, .row-title a:visited { color: var(--accent); }
