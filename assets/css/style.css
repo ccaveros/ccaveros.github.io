@@ -114,13 +114,16 @@ body.dark-mode .icon-sun { display: inline; }
 /* ---------- hero: text column, vertical rule, margin rail ---------- */
 .hero { display: grid; grid-template-columns: 1fr 216px; gap: 0; align-items: start; margin: 3rem 0 0; }
 
-/* The masthead already carries the name, so the page opens with the claim
-   rather than repeating it. This is the h1. */
-.hero-standfirst {
+.hero-name {
   font-family: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
-  font-size: 2.3rem; font-weight: 400; font-style: normal;
-  line-height: 1.1; letter-spacing: -.01em;
-  margin: 0 0 1.5rem; max-width: 22ch;
+  font-size: 2.9rem; font-weight: 400; line-height: 1.02; letter-spacing: -.015em;
+  margin: 0 0 .55rem;
+}
+/* The claim sits under the name, in the text face so it does not compete
+   with it, but still well above body size. */
+.hero-standfirst {
+  font-size: 1.35rem; font-weight: 400; line-height: 1.35;
+  margin: 0 0 1.4rem; max-width: 40ch; color: var(--ink);
 }
 .hero-bio { font-size: .98rem; line-height: 1.66; color: var(--ink-2); margin: 0 0 .9rem; max-width: 60ch; padding-right: 2.5rem; }
 .hero-bio:last-child { margin-bottom: 0; }
@@ -312,7 +315,8 @@ body.lang-es .en-block { display: none !important; }
   .rail img { width: 100px; flex: 0 0 auto; margin-bottom: 0; }
   .rail-cap { border-bottom: 0; padding-bottom: 0; margin-bottom: .5rem; }
 
-  .hero-standfirst { font-size: 1.75rem; max-width: none; }
+  .hero-name { font-size: 2.1rem; }
+  .hero-standfirst { font-size: 1.15rem; max-width: none; }
 
   .rows > li { grid-template-columns: 1fr; }
   .row-label { padding: 0 0 .4rem; font-style: italic; }
