@@ -19,11 +19,11 @@
      still clears 4.5:1 on it, which is what set the accent's depth too:
      at the previous terracotta this ground failed at 4.32. */
   --paper: #E9DFCB;
-  --ink: #22201C;
-  --ink-2: #5A5348;
+  --ink: #2A2318;
+  --ink-2: #5C5240;
   --rule: #C9BDA3;
   --rule-2: #D8CDB5;
-  --accent: #94401F;
+  --accent: #9B3E14;
   --link-quiet: #7E4230;   /* coauthor names: warm, but quieter than the accent */
 
   --measure: 980px;
@@ -312,7 +312,12 @@ body.lang-es .en-block { display: none !important; }
 
   .hero { grid-template-columns: 1fr; margin-top: 2rem; }
   .hero-bio { padding-right: 0; }
-  .rail { border-left: 0; padding-left: 0; padding-top: 1.25rem; border-top: 1px solid var(--rule); margin-top: 1.5rem; display: flex; gap: 1.25rem; align-items: flex-start; }
+  /* No photograph any more, so the old two-column flex left the caption and
+     the link list sitting in two narrow columns that wrapped badly. Stack
+     them, and run the links as a wrapped row. */
+  .rail { border-left: 0; padding-left: 0; padding-top: 1.25rem; border-top: 1px solid var(--rule); margin-top: 1.5rem; display: block; }
+  .rail ul { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+  .rail li { margin-bottom: 0; }
   .rail img { width: 100px; flex: 0 0 auto; margin-bottom: 0; }
   .rail-cap { border-bottom: 0; padding-bottom: 0; margin-bottom: .5rem; }
 
