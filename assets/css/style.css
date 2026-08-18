@@ -199,6 +199,7 @@ body.dark-mode .icon-sun { display: inline; }
   text-underline-offset: 3px;
 }
 .row-meta a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.row-meta--inst { font-style: italic; margin-top: -.1rem; }
 .row-body { font-size: .92rem; line-height: 1.6; color: var(--ink-2); margin: 0 0 .6rem; max-width: 64ch; }
 
 /* ---------- status boxes ----------
