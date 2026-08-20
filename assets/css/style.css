@@ -151,10 +151,15 @@ body.dark-mode .icon-sun { display: inline; }
 /* No rule under section headings either. The display face at this size,
    plus the space above it, separates sections on its own. One line on the
    page, under the masthead, and that is the lot. */
+/* Headings take the accent, titles keep the ink. Size alone was not enough
+   to separate them: both were cream Caslon and read as the same kind of
+   thing. Colour makes the distinction categorical, and it matches the rule
+   already in force, where the margin column carries the accent. */
 .section-title {
   font-family: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
   font-size: 1.65rem; font-weight: 400; letter-spacing: -.015em; line-height: 1.12;
   margin: 0 0 1.25rem; padding: 0; border: 0;
+  color: var(--accent);
 }
 
 /* ---------- the row pattern, used by every list on the site ----------
