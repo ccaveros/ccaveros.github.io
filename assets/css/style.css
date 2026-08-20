@@ -153,7 +153,7 @@ body.dark-mode .icon-sun { display: inline; }
    page, under the masthead, and that is the lot. */
 .section-title {
   font-family: 'Libre Caslon Display', 'Libre Caslon Text', Georgia, serif;
-  font-size: 1.45rem; font-weight: 400; letter-spacing: -.01em; line-height: 1.15;
+  font-size: 1.65rem; font-weight: 400; letter-spacing: -.015em; line-height: 1.12;
   margin: 0 0 1.25rem; padding: 0; border: 0;
 }
 
@@ -180,7 +180,7 @@ body.dark-mode .icon-sun { display: inline; }
 /* Not bold. Caslon at this size goes heavy, and on awards the title is the
    only thing in the row, so the page turned into a wall of bold. Full ink
    against the secondary tone of everything else does the same job. */
-.row-title { font-size: 1.08rem; font-weight: 400; line-height: 1.3; margin: 0 0 .3rem; }
+.row-title { font-size: 1.12rem; font-weight: 400; line-height: 1.3; margin: 0 0 .2rem; }
 /* A linked title takes the accent, so a reader can tell which entries in a
    list are clickable without any underline being drawn. */
 .row-title a, .row-title a:link, .row-title a:visited { color: var(--accent); }
@@ -200,7 +200,9 @@ body.dark-mode .icon-sun { display: inline; }
   text-underline-offset: 3px;
 }
 .row-meta a:hover { color: var(--accent); text-decoration-color: var(--accent); }
-.row-meta--inst { font-style: italic; margin-top: -.1rem; }
+/* The granting body sits clearly below the award, not beside it in weight:
+   smaller, italic, secondary tone. */
+.row-meta--inst { font-style: italic; font-size: .85rem; margin-top: 0; }
 .row-body { font-size: .92rem; line-height: 1.6; color: var(--ink-2); margin: 0 0 .6rem; max-width: 64ch; }
 
 /* ---------- status boxes ----------
