@@ -15,16 +15,17 @@
    ============================================================ */
 
 :root {
-  /* Beige, not cream. The ground is as dark as it can go while the accent
-     still clears 4.5:1 on it, which is what set the accent's depth too:
-     at the previous terracotta this ground failed at 4.32. */
-  --paper: #E9DFCB;
-  --ink: #2A2318;
-  --ink-2: #5C5240;
-  --rule: #C9BDA3;
-  --rule-2: #D8CDB5;
-  --accent: #9B3E14;
-  --link-quiet: #7E4230;   /* coauthor names: warm, but quieter than the accent */
+  /* Darker beige, with the ink and accent deepened to match. Paper and ink
+     darken together, so a darker ground alone would have cost contrast
+     rather than gained it; moving all three is what raises every ratio.
+     Measured on this ground: ink 13.11, secondary 7.03, accent 6.51. */
+  --paper: #E4D8BD;
+  --ink: #171309;
+  --ink-2: #4A4230;
+  --rule: #C2B496;
+  --rule-2: #D3C5A6;
+  --accent: #7E2E0B;
+  --link-quiet: #663120;   /* coauthor names: warm, but quieter than the accent */
 
   --measure: 980px;
   --photo-filter: grayscale(.5) contrast(1.04);
