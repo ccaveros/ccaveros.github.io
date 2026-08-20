@@ -205,14 +205,10 @@ body.dark-mode .icon-sun { display: inline; }
   text-underline-offset: 3px;
 }
 .row-meta a:hover { color: var(--accent); text-decoration-color: var(--accent); }
-/* Awards use a wider margin column: the year and the granting body sit
-   together on the left, so the content column holds only the award name.
-   Stacking the award and the institution in one column made the two read
-   as the same kind of thing, which is what this fixes. */
-.rows--awards > li { grid-template-columns: 210px 1fr; }
-.rows--awards .row-label { display: flex; flex-direction: column; gap: .3rem; padding-top: .25rem; padding-right: 1.5rem; }
-.row-year { font-variant-numeric: tabular-nums; }
-.row-inst { font-size: .8rem; font-style: italic; color: var(--ink-2); line-height: 1.4; }
+/* The granting body sits under the award title. The separation is carried
+   by type, not position: 1.12rem upright ink above 0.8rem italic secondary
+   is a far wider gap than the 1.08 / 0.92 it replaces. */
+.row-meta--inst { font-style: italic; font-size: .8rem; color: var(--ink-2); margin-top: 0; line-height: 1.45; }
 .row-body { font-size: .92rem; line-height: 1.6; color: var(--ink-2); margin: 0 0 .6rem; max-width: 64ch; }
 
 /* ---------- status boxes ----------
@@ -340,10 +336,7 @@ body.lang-es .en-block { display: none !important; }
   .rows > li { grid-template-columns: 1fr; }
   .row-label { padding: 0 0 .4rem; font-style: italic; }
   .row-label .box { font-style: normal; }   /* a boxed label is never italic */
-  .rows--awards > li { grid-template-columns: 1fr; }
-  .rows--awards .row-label { flex-direction: row; flex-wrap: wrap; align-items: baseline;
-                             gap: .1rem .7rem; padding: 0 0 .3rem; }
-  .row-inst { font-style: italic; }
+
   .row-content { border-left: 0; padding-left: 0; }
 
   /* Nothing may push the page sideways on a narrow screen. Grid children
