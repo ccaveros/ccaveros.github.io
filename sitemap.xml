@@ -15,6 +15,32 @@
 
 
   <url>
+    <loc>https://ccaveros.github.io/data-projects.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ccaveros.github.io/projects/nets.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ccaveros.github.io/projects/npac.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ADRI: restore when the project entry is uncommented on data-projects.html
+  <url>
+    <loc>https://ccaveros.github.io/projects/adri.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  -->
+
+  <url>
     <loc>https://ccaveros.github.io/teaching.html</loc>
     <lastmod>2026-08-13</lastmod>
     <priority>0.6</priority>
