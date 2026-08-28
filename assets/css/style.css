@@ -132,11 +132,29 @@ body.dark-mode .icon-sun { display: inline; }
    them now that nothing is underlined. */
 .hero-bio a, .prose a { color: var(--accent); }
 
-.rail { padding-left: 2rem; }
-/* Kept for the day a real portrait goes back in. No placeholder stands in
-   for it in the meantime: an empty coloured rectangle reads as a missing
-   asset, not as design. */
-.rail img { width: 100%; display: block; filter: var(--photo-filter); margin-bottom: .9rem; }
+/* 2.5rem drops the rail so the top of the portrait lands on the baseline of
+   the name rather than on the top of its line box. Measured, not guessed: the
+   name sets at 2.9rem with line-height 1.02, which puts its baseline 40px
+   below the top of the box. The name then owns the top line by itself, and
+   the rail reads as starting where it ends. The mobile rule below resets this,
+   because there the rail sits under the text rather than beside it. */
+.rail { padding-left: 2rem; padding-top: 2.5rem; }
+/* The portrait carries the same hairline as the caption directly beneath it,
+   in the rule colour rather than the ink. Without it the photograph is the
+   only bounded thing in the rail with no rule on it, so it floats where the
+   caption sits, and the two read as loose pieces rather than one stacked
+   object. Square, like everything else: a rounded corner here would be the
+   only one on the site, which reads as an oversight rather than a decision. */
+/* height: auto is load-bearing. The img carries width and height attributes so
+   the browser reserves the right box before the file arrives, and without this
+   the attribute height wins over the scaled width and the portrait renders
+   stretched to its full pixel height. */
+.rail img {
+  width: 100%; height: auto; display: block;
+  filter: var(--photo-filter);
+  border: 1px solid var(--rule);
+  margin-bottom: .9rem;
+}
 .rail-cap { font-size: .82rem; line-height: 1.5; color: var(--ink-2); margin: 0 0 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rule); }
 .rail ul { list-style: none; margin: 0; padding: 0; font-size: .9rem; }
 .rail li { margin-bottom: .3rem; }
@@ -321,13 +339,13 @@ body.lang-es .en-block { display: none !important; }
 
   .hero { grid-template-columns: 1fr; margin-top: 2rem; }
   .hero-bio { padding-right: 0; }
-  /* No photograph any more, so the old two-column flex left the caption and
-     the link list sitting in two narrow columns that wrapped badly. Stack
-     them, and run the links as a wrapped row. */
+  /* Stacked rather than two narrow columns, which wrapped badly, and the
+     links run as a wrapped row. The portrait keeps its own gap: with the
+     margin at zero it butts straight into the caption underneath it. */
   .rail { border-left: 0; padding-left: 0; padding-top: 1.25rem; border-top: 1px solid var(--rule); margin-top: 1.5rem; display: block; }
   .rail ul { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
   .rail li { margin-bottom: 0; }
-  .rail img { width: 100px; flex: 0 0 auto; margin-bottom: 0; }
+  .rail img { width: 100px; flex: 0 0 auto; margin-bottom: .8rem; }
   .rail-cap { border-bottom: 0; padding-bottom: 0; margin-bottom: .5rem; }
 
   .hero-name { font-size: 2.1rem; }
