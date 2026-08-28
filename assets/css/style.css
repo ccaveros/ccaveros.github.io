@@ -337,8 +337,17 @@ body.lang-es .en-block { display: none !important; }
 
   .nav-links { gap: 1rem; font-size: .88rem; flex-wrap: wrap; }
 
-  .hero { grid-template-columns: 1fr; margin-top: 2rem; }
-  .hero-bio { padding-right: 0; }
+  /* The rail is the last thing in the hero's markup, so on a phone the
+     portrait landed 1.48 screens down, under all three bio paragraphs and
+     just above the next section. display: contents lifts the text column's
+     children into the hero itself so the rail can be ordered between the
+     standfirst and the bio: name, claim, face, then the detail. */
+  .hero { display: flex; flex-direction: column; margin-top: 2rem; }
+  .hero-text { display: contents; }
+  .hero-name { order: 1; }
+  .hero-standfirst { order: 2; }
+  .rail { order: 3; }
+  .hero-bio { order: 4; padding-right: 0; }
   /* Portrait and affiliation share the top row. Stacked, the photograph was a
      100px stamp with two thirds of the line empty beside it and the caption
      starting again underneath, which read as an orphan rather than a portrait.
@@ -346,8 +355,9 @@ body.lang-es .en-block { display: none !important; }
      wrapped badly; flex-basis: 100% keeps the links on a full-width row of
      their own, which is what makes the two-column top row work. */
   .rail {
-    border-left: 0; padding-left: 0; padding-top: 1.25rem;
-    border-top: 1px solid var(--rule); margin-top: 1.5rem;
+    border-left: 0; padding-left: 0; padding: 1.25rem 0;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    margin: 1.25rem 0 1.75rem;
     display: grid; grid-template-columns: 130px minmax(0, 1fr);
     column-gap: 1.1rem; row-gap: .7rem; align-items: start;
   }
