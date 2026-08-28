@@ -339,14 +339,22 @@ body.lang-es .en-block { display: none !important; }
 
   .hero { grid-template-columns: 1fr; margin-top: 2rem; }
   .hero-bio { padding-right: 0; }
-  /* Stacked rather than two narrow columns, which wrapped badly, and the
-     links run as a wrapped row. The portrait keeps its own gap: with the
-     margin at zero it butts straight into the caption underneath it. */
-  .rail { border-left: 0; padding-left: 0; padding-top: 1.25rem; border-top: 1px solid var(--rule); margin-top: 1.5rem; display: block; }
-  .rail ul { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+  /* Portrait and affiliation share the top row. Stacked, the photograph was a
+     100px stamp with two thirds of the line empty beside it and the caption
+     starting again underneath, which read as an orphan rather than a portrait.
+     The earlier attempt at columns put the link list in the flex row too and
+     wrapped badly; flex-basis: 100% keeps the links on a full-width row of
+     their own, which is what makes the two-column top row work. */
+  .rail {
+    border-left: 0; padding-left: 0; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule); margin-top: 1.5rem;
+    display: grid; grid-template-columns: 130px minmax(0, 1fr);
+    column-gap: 1.1rem; row-gap: .7rem; align-items: start;
+  }
+  .rail img { grid-column: 1; grid-row: 1 / span 2; width: 130px; margin: 0; }
+  .rail-cap { grid-column: 2; grid-row: 1; border-bottom: 0; padding-bottom: 0; margin: 0; }
+  .rail ul { grid-column: 2; grid-row: 2; display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
   .rail li { margin-bottom: 0; }
-  .rail img { width: 100px; flex: 0 0 auto; margin-bottom: .8rem; }
-  .rail-cap { border-bottom: 0; padding-bottom: 0; margin-bottom: .5rem; }
 
   .hero-name { font-size: 2.1rem; }
   .hero-standfirst { font-size: 1.15rem; max-width: none; }
