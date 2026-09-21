@@ -18,13 +18,15 @@
   /* Darker beige, with the ink and accent deepened to match. Paper and ink
      darken together, so a darker ground alone would have cost contrast
      rather than gained it; moving all three is what raises every ratio.
-     Measured on this ground: ink 13.11, secondary 7.03, accent 6.51. */
+     Measured on this ground: ink 13.11, secondary 7.03, accent 6.51,
+     coauthor links 6.97. */
   --paper: #E4D8BD;
   --ink: #171309;
   --ink-2: #4A4230;
   --rule: #C2B496;
   --rule-2: #D3C5A6;
   --accent: #7E2E0B;
+  --link-coauthor: #324650;   /* --ink-2 in OKLCH with the hue turned cool; same lightness and chroma */
 
   --measure: 980px;
   --photo-filter: grayscale(.5) contrast(1.04);
@@ -38,6 +40,7 @@ body.dark-mode {
   --rule: #46403A;
   --rule-2: #332F2A;
   --accent: #E08B5C;
+  --link-coauthor: #97A8B0;   /* same derivation from the dark --ink-2; 7.18:1 */
   --photo-filter: grayscale(.5) contrast(.98) brightness(.92);
 }
 
@@ -208,14 +211,15 @@ body.dark-mode .icon-sun { display: inline; }
 .row-meta { font-size: .92rem; color: var(--ink-2); margin: 0 0 .6rem; }
 .row-meta:last-child { margin-bottom: 0; }
 .row-meta em { font-style: italic; }
-/* Coauthor names. Set in the ink, a step brighter than the grey around
-   them, with the hairline underneath in the rule colour as the link cue.
-   No second hue: a warm tint read as a faded accent and a cool one fought
-   the palette. Hover brings in the accent. */
+/* Coauthor names. Distinguished by temperature alone: a cool grey at the
+   secondary ink's exact lightness and chroma. A warm tint read as a faded
+   accent, a brighter tone made the line stripey, and a saturated blue fought
+   the palette. The hairline underneath sits in the same tone; hover brings
+   in the accent. */
 .row-meta a {
-  color: var(--ink);
+  color: var(--link-coauthor);
   text-decoration: underline;
-  text-decoration-color: var(--rule);
+  text-decoration-color: currentColor;
   text-decoration-thickness: .5px;
   text-underline-offset: 3px;
 }
