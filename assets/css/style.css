@@ -18,13 +18,15 @@
   /* Darker beige, with the ink and accent deepened to match. Paper and ink
      darken together, so a darker ground alone would have cost contrast
      rather than gained it; moving all three is what raises every ratio.
-     Measured on this ground: ink 13.11, secondary 7.03, accent 6.51. */
+     Measured on this ground: ink 13.11, secondary 7.03, accent 6.51,
+     author links 6.43. */
   --paper: #E4D8BD;
   --ink: #171309;
   --ink-2: #4A4230;
   --rule: #C2B496;
   --rule-2: #D3C5A6;
   --accent: #7E2E0B;
+  --link-author: #2B4A6F;   /* coauthor names: cool, so never mistaken for the accent */
 
   --measure: 980px;
   --photo-filter: grayscale(.5) contrast(1.04);
@@ -38,6 +40,7 @@ body.dark-mode {
   --rule: #46403A;
   --rule-2: #332F2A;
   --accent: #E08B5C;
+  --link-author: #8FB8D0;   /* 8.38:1 on the dark ground */
   --photo-filter: grayscale(.5) contrast(.98) brightness(.92);
 }
 
@@ -208,13 +211,12 @@ body.dark-mode .icon-sun { display: inline; }
 .row-meta { font-size: .92rem; color: var(--ink-2); margin: 0 0 .6rem; }
 .row-meta:last-child { margin-bottom: 0; }
 .row-meta em { font-style: italic; }
-/* Coauthor names. They sit in the metadata grey rather than a second warm
-   tint: a tint at this lightness scores near 1:1 against the text around it
-   and reads as a faded copy of the accent, so it neither signals a link nor
-   keeps the accent scarce. The hairline underneath, set in the rule colour,
-   is the link cue; hover brings in the accent. */
+/* Coauthor names. They are links, so they get a hue of their own, and a cool
+   one: a warm tint at this lightness reads as a faded copy of the accent,
+   and the grey hides that they are links at all. The hairline underneath,
+   set in the rule colour, is the non-colour cue; hover brings in the accent. */
 .row-meta a {
-  color: var(--ink-2);
+  color: var(--link-author);
   text-decoration: underline;
   text-decoration-color: var(--rule);
   text-decoration-thickness: .5px;
