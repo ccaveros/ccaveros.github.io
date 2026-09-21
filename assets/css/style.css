@@ -25,7 +25,6 @@
   --rule: #C2B496;
   --rule-2: #D3C5A6;
   --accent: #7E2E0B;
-  --link-quiet: #663120;   /* coauthor names: warm, but quieter than the accent */
 
   --measure: 980px;
   --photo-filter: grayscale(.5) contrast(1.04);
@@ -39,7 +38,6 @@ body.dark-mode {
   --rule: #46403A;
   --rule-2: #332F2A;
   --accent: #E08B5C;
-  --link-quiet: #C98A6B;
   --photo-filter: grayscale(.5) contrast(.98) brightness(.92);
 }
 
@@ -210,13 +208,13 @@ body.dark-mode .icon-sun { display: inline; }
 .row-meta { font-size: .92rem; color: var(--ink-2); margin: 0 0 .6rem; }
 .row-meta:last-child { margin-bottom: 0; }
 .row-meta em { font-style: italic; }
-/* Coauthor names. Colour alone cannot signal these: contrast is a
-   luminance ratio, so any hue at this lightness scores near 1:1 against
-   the text around it, where 3:1 is needed. The hairline underneath is set
-   in the rule colour, so it registers as a tint rather than an underline
-   while still being a non-colour cue. */
+/* Coauthor names. They sit in the metadata grey rather than a second warm
+   tint: a tint at this lightness scores near 1:1 against the text around it
+   and reads as a faded copy of the accent, so it neither signals a link nor
+   keeps the accent scarce. The hairline underneath, set in the rule colour,
+   is the link cue; hover brings in the accent. */
 .row-meta a {
-  color: var(--link-quiet);
+  color: var(--ink-2);
   text-decoration: underline;
   text-decoration-color: var(--rule);
   text-decoration-thickness: .5px;
