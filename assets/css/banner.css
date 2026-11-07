@@ -1,0 +1,38 @@
+/* Banner for ccaveros.github.io, added 6 Nov 2026.
+   Sits as the first child of .container so it inherits the measure and the
+   side padding instead of restating them, and lines up with the nav rule and
+   the text column. Colours come from style.css tokens, so it follows the
+   existing light and dark themes with no extra rules. */
+
+.site-banner {
+  margin: 0 0 2.75rem;
+}
+
+.site-banner img {
+  display: block;
+  width: 100%;
+  /* Shallow on purpose: a 2:1 block would swallow a page that is mostly
+     text. Caps at 230px so it reads as a band, not a hero. */
+  height: clamp(120px, 20vw, 230px);
+  object-fit: cover;
+  object-position: center 45%;
+  border: 1px solid var(--rule);
+}
+
+.site-banner figcaption {
+  margin-top: .55rem;
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+/* On a phone the band is narrower than 4:1, so object-fit crops it
+   horizontally, and centred cropping cuts off "PARA" and leaves the wall
+   reading "...la guerra, nada" - the opposite of the point. Anchor left so
+   the whole phrase survives and the parked cars on the right go instead. */
+@media (max-width: 700px) {
+  .site-banner img {
+    height: clamp(110px, 30vw, 170px);
+    object-position: left center;
+  }
+}
