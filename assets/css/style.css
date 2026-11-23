@@ -387,3 +387,12 @@ body.lang-es .en-block { display: none !important; }
   .block-fill { height: 150px; }
   .footer-inner { flex-direction: column; gap: .6rem; }
 }
+
+/* Research page: dates and status labels sit at the right of each entry.
+   Columns are entry, label, expand button. Below 760px the stacked layout applies. */
+@media (min-width: 761px) {
+  .page-research .rows > li { grid-template-columns: minmax(0, 1fr) 7.5rem 34px; position: relative; }
+  .page-research .row-content { grid-column: 1; grid-row: 1; padding-right: 1.25rem; }
+  .page-research .row-label { grid-column: 2; grid-row: 1; padding-right: 0; text-align: right; white-space: nowrap; }
+  .page-research .pub-toggle { position: absolute; top: 0; right: 0; }
+}
