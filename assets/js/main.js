@@ -69,14 +69,14 @@ function togglePub(header) {
   var tagPapers = {
     'Peace': [
       { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' },
-      { title: 'The Demand for Rebel Rules', href: 'research.html' }
+      { title: 'The Demand for Rebel Rule', href: 'research.html' }
     ],
     'Civil Society': [
       { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' }
     ],
     'Dispute Resolution': [
       { title: 'Civil Society and the Local Dynamics of Peacebuilding', href: 'research.html' },
-      { title: 'The Demand for Rebel Rules', href: 'research.html' }
+      { title: 'The Demand for Rebel Rule', href: 'research.html' }
     ],
     'Methods': [
       { title: 'Human Rights Consolidation or Fragmentation?', href: 'research.html' }
